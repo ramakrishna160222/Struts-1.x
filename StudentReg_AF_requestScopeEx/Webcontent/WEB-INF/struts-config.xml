@@ -1,0 +1,13 @@
+<struts-config>
+<form-beans>
+<form-bean name="student" type="formbeans.Student" />
+</form-beans>
+
+<action-mappings>
+<action name="student" path="/reg" type="controller.StudentRegController" input="/index.jsp" scope="request">
+<forward name="success" path="/success.jsp"></forward>
+</action>
+</action-mappings>
+
+
+</struts-config>

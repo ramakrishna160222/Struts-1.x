@@ -2,7 +2,8 @@
 
 
 <h1>Reg Form</h1>
-<html:form action="reg" method="post">
+<html:form action="reg" method="post" onsubmit="return validatorRF(this);">
+<html:javascript formName="RF"  />
 <pre>
 ID:			<html:text property="id" /><html:errors property="id" />
 NAME:		<html:text property="name" /><html:errors property="name" />

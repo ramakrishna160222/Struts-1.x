@@ -1,0 +1,17 @@
+<struts-config>
+
+<form-beans>
+<form-bean name="emp" type="beans.Employee" />
+</form-beans>
+
+<action-mappings>
+<action path="/empcrud" type="controller.EmpCrudController"  name="emp" validate="true" parameter="submit" > 
+<forward name="success" path="/success.jsp" />
+<forward name="fail" path="/fail.jsp" />
+<forward name="find" path="/find.jsp" />
+<forward name="findAll" path="/findAll.jsp" />
+</action>
+
+</action-mappings>
+
+</struts-config>

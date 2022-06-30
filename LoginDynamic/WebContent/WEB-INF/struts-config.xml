@@ -1,0 +1,28 @@
+<struts-config>
+<form-beans>
+<form-bean name="login"  type="beans.LoginForm"> </form-bean>
+<form-bean name="emp" type="beans.Employee"></form-bean>
+</form-beans> 
+
+<action-mappings>
+
+<action path="/empcrud" name="emp" type="controller.EmpCrudController" parameter="submit">
+<forward name="success" path="/success.jsp" />
+<forward name="fail" path="/fail.jsp" />
+<forward name="find" path="/find.jsp" />
+<forward name="findAll" path="/findAll.jsp" />
+<forward name="login" path="/login.jsp" />
+<forward name="reg" path="/reg.jsp" />
+</action>
+<action path="/login" name="login" type="controller.LoginController" >
+<forward name="success" path="/success.jsp" />
+<forward name="reg" path="/reg.jsp" />
+<forward name="fail" path="/fail.jsp" />
+<forward name="home" path="/employeehome.jsp" />
+</action>
+<action path="/logout" type="controller.LogoutController">
+<forward name="logout" path="/logout.jsp"></forward>
+</action>
+
+</action-mappings>
+</struts-config>

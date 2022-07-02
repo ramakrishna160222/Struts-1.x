@@ -4,4 +4,4 @@
 and enter id to delete the student.After successful deletion the page will reload 
 and remain same. 
 
-3)Dont forget to change DB Credentials in code to your DB user and password.
+3)Dont Forget to change DB Credentials in code to your DB user and password.

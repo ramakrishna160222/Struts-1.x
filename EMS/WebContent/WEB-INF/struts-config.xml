@@ -1,0 +1,23 @@
+<struts-config>
+
+
+<form-beans>
+<form-bean name="LF" type="com.ds.ems.main.LoginForm" />
+</form-beans>
+
+
+<action-mappings>
+<action path="/login"  name="LF" input="/login.jsp" type="com.ds.ems.main.LoginAction" >
+<forward name="samepage" path="/login.jsp" />
+<forward name="adminsuccess" path="/adminsuccess.do?prefix=/admin&amp;page=/adminforward.do" />
+<forward name="employeesuccess" path="/employeesuccess.do?prefix=/employee&amp;page=/employeeforward.do" />
+<forward name="usersuccess" path="/usersuccess.do?prefix=/user&amp;page=/userforward.do" />
+</action>
+<action path="/adminsuccess" type="org.apache.struts.actions.SwitchAction" />
+<action path="/employeesuccess" type="org.apache.struts.actions.SwitchAction" />
+<action path="/usersuccess" type="org.apache.struts.actions.SwitchAction" />
+
+
+</action-mappings>
+<message-resources parameter="resources/Messages" />
+</struts-config>

@@ -1,0 +1,13 @@
+<struts-config>
+<form-beans>
+<form-bean name="AF" type="com.ds.ems.admin.AdminUSERUpdate" />
+</form-beans>
+
+<action-mappings>
+
+<action path="/adminupdate" name="AF"> </action>
+<action path="/adminforward" forward="/adminsuccess.jsp" />
+</action-mappings>
+
+
+</struts-config>

@@ -1,0 +1,13 @@
+<struts-config>
+<form-beans>
+<form-bean name="AF" type="com.ds.ems.user.UserReg" />
+</form-beans>
+
+<action-mappings>
+
+<action path="/userreg" name="AF"> </action>
+<action path="/userforward" forward="/usersuccess.jsp" />
+</action-mappings>
+
+
+</struts-config>

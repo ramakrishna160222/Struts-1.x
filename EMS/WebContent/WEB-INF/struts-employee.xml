@@ -1,0 +1,12 @@
+<struts-config>
+<form-beans>
+<form-bean name="AF" type="com.ds.ems.employee.EmployeeReg" />
+</form-beans>
+
+<action-mappings>
+<action path="/employeereg" name="AF"> </action>
+<action path="/employeeforward" forward="/employeesuccess.jsp" />
+</action-mappings>
+
+
+</struts-config>
